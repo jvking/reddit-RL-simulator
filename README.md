@@ -50,10 +50,10 @@ There are more arguments with MySimulator.py:
 
 There are 5 modes in our simulator. In [1] we always chose mode=1 to ensure we are learning in a "real-time" threads tracking scenario.
 
-⋅⋅* mode = 0: tracking based on tree structures, not time stamps, immediate children (direct responses) are returned
-..* mode = 1: tracking based on time stamps (more real-time scenario), first N children (in subtrees) are returned
-..* mode = 2: tracking based on time stamps, first N children (direct responses) are returned
-..* mode = 3: tracking based on time stamps, after T timeStep, tracked children (in subtrees) are returned
+  * mode = 0: tracking based on tree structures, not time stamps, immediate children (direct responses) are returned
+  * mode = 1: tracking based on time stamps (more real-time scenario), first N children (in subtrees) are returned
+  * mode = 2: tracking based on time stamps, first N children (direct responses) are returned
+  * mode = 3: tracking based on time stamps, after T timeStep, tracked children (in subtrees) are returned
 ..* mode = 4: tracking based on time stamps, after T timeStep, tracked children (direct responses) are returned
 
 --K:
