@@ -22,7 +22,7 @@ class RedditNavigationSimulator:
         # mode = 2: tracking based on time stamps, first N children (direct responses) are returned
         # mode = 3: tracking based on time stamps, after T timeStep, tracked children (in subtrees) are returned
         # mode = 4: tracking based on time stamps, after T timeStep, tracked children (direct responses) are returned
-        # K: every time pick K comments to follow, N: every time at most N new comments can be shown (in mode 1/2), T: timeStep in mode 3/4, M: if not None, only the most M comments will be in the state
+        # K: every time pick K comments to follow, N: every time at most N new comments can be shown (in mode 1/2), T: timeStep in mode 3/4, M: if not None, only the most recent M comments will be in the state
         conn = sqlite3.connect(dataFile)
         if "askmen" in dataFile or "askwomen" in dataFile or "askscience" in dataFile or "atheism" in dataFile or "changemyview" in dataFile or "fitness" in dataFile or "politics" in dataFile or "worldnews" in dataFile:
             df_post = pd.read_sql_query("SELECT id,subreddit,title,score,num_comments,created FROM posts", conn)

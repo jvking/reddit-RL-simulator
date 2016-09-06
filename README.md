@@ -53,20 +53,23 @@ There are 5 modes in our simulator. In [1] we always chose mode=1 to ensure we a
   mode = 0: tracking based on tree structures, not time stamps, immediate children (direct responses) are returned  
   mode = 1: tracking based on time stamps (more real-time scenario), first N children (in subtrees) are returned  
   mode = 2: tracking based on time stamps, first N children (direct responses) are returned  
-  mode = 3: tracking based on time stamps, after T timeStep, tracked children (in subtrees) are returned  
-  mode = 4: tracking based on time stamps, after T timeStep, tracked children (direct responses) are returned
+  mode = 3: tracking based on time stamps, after T seconds, tracked children (in subtrees) are returned  
+  mode = 4: tracking based on time stamps, after T seconds, tracked children (direct responses) are returned
 
---K:
+**--K**:
+At every time step, the agent picks _K_ comments to follow.
 
---N:
+**--N**:
+At every time step, at most _N_ new comments can be shown (in mode = 1 or mode = 2).
 
---T:
+**--T**:
+In mode = 3 or mode = 4, the number of seconds between two time steps. New comments following tracked comments, between this time period, will be returned.
 
---M:
+**--M**:
+If not None, only the most recent _M_ comments will be in the state.
 
---dataFile:
-
-
+**--dataFile**:
+Path to the database file for a particular subreddit, e.g. data/askscience.db
 
 ### Reference
 1. Ji He, Mari Ostendorf, Xiaodong He, Jianshu Chen, Jianfeng Gao, Lihong Li and Li Deng. [_Deep Reinforcement Learning with a Combinatorial Action Space for Predicting and Tracking Popular Discussion Threads._](http://arxiv.org/abs/1606.03667) Conference on Empirical Methods in Natural Language Processing (EMNLP). 2016.
