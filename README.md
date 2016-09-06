@@ -46,7 +46,7 @@ reddit-RL-simulator/reddit_vocab_5k.txt stores the most frequent 5K vocabulary o
 
 There are more arguments with MySimulator.py:
 
---mode:
+**--mode**:
 
 There are 5 modes in our simulator. In [1] we always chose mode=1 to ensure we are learning in a "real-time" threads tracking scenario.
 
