@@ -1,8 +1,8 @@
 # Reddit-RL-simulator
 This repository provides simulator codes for predicting and tracking popular discussion threads on Reddit.
 
-### Data (Thanks to [Hao Fang](https://students.washington.edu/hfang/#Hao%20Fang) and [Trang Tran](https://students.washington.edu/ttmt001/) for preparing the data)
-Here are basic statistics of filtered subreddit data sets (in order to have long enough discussion threads, we filter out discussion trees with fewer than 100 comments):
+### Data
+Thanks to [Hao Fang](https://students.washington.edu/hfang/#Hao%20Fang) and [Trang Tran](https://students.washington.edu/ttmt001/) for preparing the data. Here are basic statistics of filtered subreddit data sets (in order to have long enough discussion threads, we filter out discussion trees with fewer than 100 comments):
 
 | Subreddit | # Posts (in k) | # Comments (in M) |
 | :--- | :---: | :---: |
