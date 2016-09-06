@@ -6,7 +6,7 @@ This repository provides simulator codes for predicting and tracking popular dis
 
 Please copy the .db database files and put them under reddit-RL-simulator/data/
 
-### Usage (dependencies: Python 2.7)
+### Basic Usage (dependencies: Python 2.7)
 To run the simulation, simply type:
 ```
 python MySimulator.py --K 3 --N 10 --dataFile data/askscience.db
@@ -37,8 +37,35 @@ You can edit the main function in MySimulator.py to hook up with your own agent 
 ```
 (state, actions, reward) = mySimulator.Read() # state is a list of string (state-text), actions is a list of strings (sub-actions), reward is a float
 mySimulator.Act(playerInput)                  # playerInput is a list of integers
-mySimulator.Restart()                         # after the episode ends, restart the game. User can choose to restart with a discussion tree in either train/test (by setting dataset to "train" or "test")
+mySimulator.Restart(dataset = "train")        # after the episode ends, restart the game.
 ```
+Note that in mySimulator.Restart() function, user can choose to restart with a discussion tree in either train/test (by setting dataset to "train" or "test"). This way we make sure the models are trained and tested with different discussion trees to show how well the models generalize.
+
+### More Details
+reddit-RL-simulator/reddit_vocab_5k.txt stores the most frequent 5K vocabulary of Reddit data set.
+
+There are more arguments with MySimulator.py:
+
+--mode:
+
+There are 5 modes in our simulator. In [1] we always chose mode=1 to ensure we are learning in a "real-time" threads tracking scenario.
+mode = 0: tracking based on tree structures, not time stamps, immediate children (direct responses) are returned
+mode = 1: tracking based on time stamps (more real-time scenario), first N children (in subtrees) are returned
+mode = 2: tracking based on time stamps, first N children (direct responses) are returned
+mode = 3: tracking based on time stamps, after T timeStep, tracked children (in subtrees) are returned
+mode = 4: tracking based on time stamps, after T timeStep, tracked children (direct responses) are returned
+
+--K:
+
+--N:
+
+--T:
+
+--M:
+
+--dataFile:
+
+
 
 ### Reference
 1. Ji He, Mari Ostendorf, Xiaodong He, Jianshu Chen, Jianfeng Gao, Lihong Li and Li Deng. [_Deep Reinforcement Learning with a Combinatorial Action Space for Predicting and Tracking Popular Discussion Threads._](http://arxiv.org/abs/1606.03667) Conference on Empirical Methods in Natural Language Processing (EMNLP). 2016.
