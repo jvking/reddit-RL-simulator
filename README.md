@@ -5,7 +5,7 @@ This repository provides simulator codes for predicting and tracking popular dis
 Here are basic statistics of filtered subreddit data sets (in order to have long enough discussion threads, we filter out discussion trees with fewer than 100 comments):
 
 | Subreddit | # Posts (in k) | # Comments (in M) |
-| --------- | -------------- | ----------------- |
+| :--- | :---: | :---: |
 | askscience | 0.94 | 0.32 |
 
 [Google drive link](https://drive.google.com/open?id=0B1E_psSh6yvQQ0FJRWJBTDFQQ1U)
