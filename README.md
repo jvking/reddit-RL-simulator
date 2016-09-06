@@ -10,8 +10,9 @@ Please copy the .db database files and put them under reddit-RL-simulator/data/
 ```
 python MySimulator.py --K 3 --N 10 --dataFile data/askscience.db
 ```
-After typing the above command, you will see the following print-outs (state, list of sub-actions, reward). The sub-action order may differ:
-State is a list of comments being tracked. The length of list depends on _$M$_ argument.
+After typing the above command, you will see the following print-outs (state, list of sub-actions, reward). The sub-action order may differ.
+
+State is a list of comments being tracked (the length of list depends on _$$M$$_ argument):
 >state: [u'Is the heat I feel when I face a bonfire transmitted to me mostly by infrared radiation or by heated air?']
 
 
