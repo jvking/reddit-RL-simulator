@@ -7,6 +7,10 @@ Here are basic statistics of filtered subreddit data sets (in order to have long
 | Subreddit | # Posts (in k) | # Comments (in M) |
 | :--- | :---: | :---: |
 | askscience | 0.94 | 0.32 |
+| askmen | 4.45 | 1.06 |
+| todayilearned | 9.44 | 5.11 |
+| worldnews | 9.88 | 5.99 |
+| nfl | 11.73 | 6.12 |
 
 [Google drive link](https://drive.google.com/open?id=0B1E_psSh6yvQQ0FJRWJBTDFQQ1U)
 
