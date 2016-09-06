@@ -33,7 +33,7 @@ List of sub-actions:
 Reward:
 >reward: 1772
 
-You can edit the main function in MySimulator.py to hook up with your own agent and RL framework. The interface of all three text games are designed so that they share the same interface:
+You can edit the main function in MySimulator.py to hook up with your own agent and RL framework. The interface is designed so that you can treat this task (predicting and tracking popular discussion threads) as a black box:
 ```
 (state, actions, reward) = mySimulator.Read() # state is a list of string (state-text), actions is a list of strings (sub-actions), reward is a float
 mySimulator.Act(playerInput)                  # playerInput is a list of integers
