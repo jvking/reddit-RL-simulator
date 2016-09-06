@@ -37,7 +37,7 @@ You can edit the main function in MySimulator.py to hook up with your own agent 
 ```
 (state, actions, reward) = mySimulator.Read() # state is a list of string (state-text), actions is a list of strings (sub-actions), reward is a float
 mySimulator.Act(playerInput)                  # playerInput is a list of integers
-mySimulator.Restart(dataset = "train")        # after the episode ends, restart another episode by randomly pick a discussion tree.
+mySimulator.Restart(dataset = "train")        # after the episode ends, restart another episode by randomly picking a discussion tree.
 ```
 Note that in mySimulator.Restart() function, user can choose to restart with a discussion tree in either train/test (by setting dataset to "train" or "test"). This way we make sure the models are trained and tested with different discussion trees to show how well the models generalize.
 
