@@ -131,7 +131,7 @@ class RedditNavigationSimulator:
         return
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description = "Reddit navigation simulator", epilog = "E.g. ./MySimulator.py --mode 1 --K 1 --dataFile data/politics.db")
+    parser = argparse.ArgumentParser(description = "Reddit navigation simulator", epilog = "E.g. ./MySimulator.py --mode 1 --K 3 --N 10 --dataFile data/askscience.db")
     parser.add_argument('--mode', type = int, required = False, default = 1)
     parser.add_argument('--K', type = int, required = True) # we choose 3 mostly in our paper
     parser.add_argument('--dataFile', type = str, required = True)
