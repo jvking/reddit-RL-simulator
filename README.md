@@ -7,6 +7,7 @@ This repository provides simulator codes for predicting and tracking popular dis
 Please copy the .db database files and put them under reddit-RL-simulator/data/
 
 ### Usage (dependencies: Python 2.7)
+To run the simulation, simply type:
 ```
 python MySimulator.py --K 3 --N 10 --dataFile data/askscience.db
 ```
@@ -31,6 +32,13 @@ List of sub-actions:
 
 Reward:
 >reward: 1772
+
+You can edit the main function in MySimulator.py to hook up with your own agent and RL framework. The interface of all three text games are designed so that they share the same interface:
+```
+(state, actions, reward) = mySimulator.Read() # state is a list of string (state-text), actions is a list of strings (sub-actions), reward is a float
+mySimulator.Act(playerInput)                  # playerInput is a list of integers
+mySimulator.Restart()                         # after the episode ends, restart the game. User can choose to restart with a discussion tree in either train/test (by setting dataset to "train" or "test")
+```
 
 ### Reference
 1. Ji He, Mari Ostendorf, Xiaodong He, Jianshu Chen, Jianfeng Gao, Lihong Li and Li Deng. [_Deep Reinforcement Learning with a Combinatorial Action Space for Predicting and Tracking Popular Discussion Threads._](http://arxiv.org/abs/1606.03667) Conference on Empirical Methods in Natural Language Processing (EMNLP). 2016.
