@@ -19,7 +19,7 @@ Due to Reddit policy, we cannot redistribute the database files. We provide post
 
 ### Basic Usage (dependencies: Python 2.7)
 To run the simulation, simply type:
-```python
+```bash
 python MySimulator.py --K 3 --N 10 --dataFile data/askscience.db
 ```
 After typing the above command, you will see the following three print-outs (state, list of sub-actions, reward). The sub-action order may differ.
@@ -45,7 +45,7 @@ Reward:
 >reward: 1772
 
 You can edit the main function in MySimulator.py to hook up with your own agent and RL framework. The interface is designed so that you can treat this task (predicting and tracking popular discussion threads) as a black box:
-```
+```python
 (state, actions, reward) = mySimulator.Read() # state is a list of string (state-text), actions is a list of strings (sub-actions), reward is a float
 mySimulator.Act(playerInput)                  # playerInput is a list of integers
 mySimulator.Restart(dataset = "train")        # after the episode ends, restart another episode by randomly picking a discussion tree.
