@@ -12,7 +12,7 @@ Thanks to [Hao Fang](https://students.washington.edu/hfang/#Hao%20Fang) and [Tra
 | worldnews | 9.88 | 5.99 |
 | nfl | 11.73 | 6.12 |
 
-Due to Reddit policy, we cannot redistribute the database files. We provide post identifiers in reddit-RL-simulator/data/${subreddit}_postIds.txt.
+Due to Reddit policy, we cannot redistribute the database files. We provide post identifiers in reddit-RL-simulator/data/${subreddit}_postIds.txt, with each line corresponding to a separate post id. For example, in askscience, if a post id is "2phjxu", then the post url would be https://www.reddit.com/r/askscience/2phjxu/.
 
 // [Google drive link](https://drive.google.com/open?id=0B1E_psSh6yvQQ0FJRWJBTDFQQ1U)  
 // Please copy the .db database files and put them under reddit-RL-simulator/data/
