@@ -19,7 +19,7 @@ Due to Reddit policy, we cannot redistribute the database files. We provide post
 
 ### Basic Usage (dependencies: Python 2.7)
 To run the simulation, simply type:
-```
+```python
 python MySimulator.py --K 3 --N 10 --dataFile data/askscience.db
 ```
 After typing the above command, you will see the following three print-outs (state, list of sub-actions, reward). The sub-action order may differ.
