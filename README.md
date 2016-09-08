@@ -12,8 +12,9 @@ Thanks to [Hao Fang](https://students.washington.edu/hfang/#Hao%20Fang) and [Tra
 | worldnews | 9.88 | 5.99 |
 | nfl | 11.73 | 6.12 |
 
-// [Google drive link](https://drive.google.com/open?id=0B1E_psSh6yvQQ0FJRWJBTDFQQ1U)
+Due to Reddit policy, we cannot redistribute the database files. We provide post identifiers in reddit-RL-simulator/data/${subreddit}_postIds.txt.
 
+// [Google drive link](https://drive.google.com/open?id=0B1E_psSh6yvQQ0FJRWJBTDFQQ1U)  
 // Please copy the .db database files and put them under reddit-RL-simulator/data/
 
 ### Basic Usage (dependencies: Python 2.7)
