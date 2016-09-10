@@ -14,8 +14,8 @@ Thanks to [Hao Fang](https://students.washington.edu/hfang/#Hao%20Fang) and [Tra
 
 Due to Reddit policy, we cannot redistribute the database files. We provide post identifiers in reddit-RL-simulator/data/${subreddit}_postIds.txt, with each line corresponding to a separate post id. For example, in askscience, if a post id is "2phjxu", then the post url would be https://www.reddit.com/r/askscience/2phjxu/. Reddit and python packages like PRAW provide APIs to access Reddit contents.
 
-// I've removed the Google drive link for our database files  
-// Please copy the .db database files and put them under reddit-RL-simulator/data/
+// I've removed the Google drive link for our database files.  
+// Please create the .db database files and put them under reddit-RL-simulator/data/
 
 ### Basic Usage (dependencies: Python 2.7)
 To run the simulation, simply type:
